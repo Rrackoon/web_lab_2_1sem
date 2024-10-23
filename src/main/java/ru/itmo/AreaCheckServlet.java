@@ -22,7 +22,6 @@ public class AreaCheckServlet extends HttpServlet {
         boolean isInside = checkArea(x, y, r);
         String currentTime = getCurrentTime();
 
-        // Получаем сессию и объект ResultBean
         HttpSession session = request.getSession();
         ResultBean resultBean = (ResultBean) session.getAttribute("resultBean");
         if (resultBean == null) {
@@ -30,11 +29,9 @@ public class AreaCheckServlet extends HttpServlet {
             session.setAttribute("resultBean", resultBean);
         }
 
-        // Добавляем результат в ResultBean
         AreaResult result = new AreaResult(x, y, r, isInside, currentTime);
         resultBean.addResult(result);
 
-        // Перенаправляем на страницу результатов
         request.getRequestDispatcher("result.jsp").forward(request, response);
     }
 

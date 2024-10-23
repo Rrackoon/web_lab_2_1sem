@@ -18,7 +18,7 @@
 
 
 <div id="cgraf">
-    <canvas height='500' width='500' id='example'></canvas>
+    <canvas height='400' width='400' id='example'></canvas>
 </div>
 <div id="error-message" style="color: red;"></div>
 
@@ -33,6 +33,8 @@
     <input type="number" id="y" name="y" required min="-2" max="2" step="0.5">
 
     <button type="submit">Проверить</button>
+    <%-- <input type="button" value="Cheсk" onClick="show(this)">--%>
+
 
 
     <%--<input type="radio" name="y" value="-2"> -2 <br>

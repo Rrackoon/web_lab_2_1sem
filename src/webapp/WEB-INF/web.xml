@@ -5,19 +5,16 @@
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <!-- Описание сервлета для проверки точки -->
     <servlet>
         <servlet-name>AreaCheckServlet</servlet-name>
         <servlet-class>ru.itmo.AreaCheckServlet</servlet-class>
     </servlet>
 
-    <!-- Сопоставление сервлета с URL -->
     <servlet-mapping>
         <servlet-name>AreaCheckServlet</servlet-name>
-        <url-pattern>/check</url-pattern> <!-- Сопоставление пути к сервлету -->
+        <url-pattern>/check</url-pattern>
     </servlet-mapping>
 
-    <!-- Контроллер сервлет для маршрутизации -->
     <servlet>
         <servlet-name>ControllerServlet</servlet-name>
         <servlet-class>ru.itmo.ControllerServlet</servlet-class>
@@ -28,9 +25,8 @@
         <url-pattern>/controller</url-pattern>
     </servlet-mapping>
 
-    <!--  приветственная страницa (index.html) -->
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file> <!-- Главная страница -->
+        <welcome-file>index.jsp</welcome-file> 
     </welcome-file-list>
 
 </web-app>
