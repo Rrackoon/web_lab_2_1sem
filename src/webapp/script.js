@@ -115,8 +115,8 @@ function base() {
     ctx.font = '12px';
     ctx.fillStyle = 'black';
 
-    ctx.fillText('X', 195, -15);
-    ctx.fillText('Y', 15, -195);
+    ctx.fillText('X', 185, -15);
+    ctx.fillText('Y', 15, -185);
 
     ctx.fillText('R', 10, -400 / 3 + 3);
     ctx.fillText('R/2', 10, -200 / 3 + 3);

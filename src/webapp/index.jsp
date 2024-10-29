@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<header class = "student-info">
+<header class="student-info">
     <h1>Проверка точки на координатной плоскости</h1>
     <h2>Эмилия Владимировна</h2>
     <p>Группа: P3224</p>
